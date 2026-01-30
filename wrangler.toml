@@ -1,0 +1,26 @@
+name = "zonkey-backend"
+main = "src/index.ts"
+compatibility_date = "2024-01-15"
+compatibility_flags = ["nodejs_compat"]
+
+# Database Binding
+[[d1_databases]]
+binding = "DB"
+database_name = "zonkey_db"
+database_id = "e58c8433-dde9-4ae6-a271-8098954e0871"
+
+# Environment Variables
+[vars]
+JWT_SECRET = "MY_SUPER_SECRET_KEY_123"
+DODO_API_KEY = "BIWxXVy-gsrPO1Mv.y0-6g9aPSX1wXn_vg6AXkCuAwZ0ypFkB0MMWyzPcRjNCHGnt"
+RESEND_API_KEY = "re_99xTzo51_FMk3NNZ2xpFLYHAjbL7ErSQt"
+DODO_WEBHOOK_SECRET = "whsec_6uJQmo+ACFSJuWmXJTqhaj84gJQWGQV1"
+
+# Build Configuration
+[build]
+command = "npm run build"
+cwd = "./"
+
+# Observability
+[observability]
+enabled = true

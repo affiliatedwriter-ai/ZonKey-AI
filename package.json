@@ -1,0 +1,24 @@
+{
+  "name": "zonkey-worker",
+  "version": "1.0.0",
+  "description": "ZonKey AI Cloudflare Worker Backend",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "itty-router": "^5.0.22",
+    "jose": "^6.1.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260122.0",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.9.3",
+    "vitest": "^1.0.0",
+    "wrangler": "^4.59.2"
+  }
+}
